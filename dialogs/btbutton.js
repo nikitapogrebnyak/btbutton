@@ -21,16 +21,26 @@ CKEDITOR.dialog.add('btbutton', function (editor) {
                                 type: 'select',
                                 label: lang.buttonStyleLabel,
                                 items: [
-                                    [lang.buttonLink, 'btn-link'],
-                                    [lang.buttonDefault, 'btn-default'],
                                     [lang.buttonPrimary, 'btn-primary'],
+                                    [lang.buttonSecondary, 'btn-secondary'],
                                     [lang.buttonSuccess, 'btn-success'],
-                                    [lang.buttonInfo, 'btn-info'],
+                                    [lang.buttonDanger, 'btn-danger'],
                                     [lang.buttonWarning, 'btn-warning'],
-                                    [lang.buttonDanger, 'btn-danger']
+                                    [lang.buttonInfo, 'btn-info'],
+                                    [lang.buttonLight, 'btn-light'],
+                                    [lang.buttonDark, 'btn-dark'],
+                                    [lang.buttonLink, 'btn-link'],
+                                    [lang.buttonOutlinePrimary, 'btn-outline-primary'],
+                                    [lang.buttonOutlineSecondary, 'btn-outline-secondary'],
+                                    [lang.buttonOutlineSuccess, 'btn-outline-success'],
+                                    [lang.buttonOutlineDanger, 'btn-outline-danger'],
+                                    [lang.buttonOutlineWarning, 'btn-outline-warning'],
+                                    [lang.buttonOutlineInfo, 'btn-outline-info'],
+                                    [lang.buttonOutlineLight, 'btn-outline-light'],
+                                    [lang.buttonOutlineDark, 'btn-outline-dark']
                                 ],
                                 setup: function (widget) {
-                                    this.setValue(widget.data.btntype || 'btn-default');
+                                    this.setValue(widget.data.btntype || 'btn-primary');
                                 },
                                 commit: function (widget) {
                                     widget.setData('btntype', this.getValue());
@@ -41,7 +51,6 @@ CKEDITOR.dialog.add('btbutton', function (editor) {
                                 type: 'select',
                                 label: lang.buttonSizeLabel,
                                 items: [
-                                    [lang.buttonSizeExSmall, 'btn-xs'],
                                     [lang.buttonSizeSmall, 'btn-sm'],
                                     [lang.buttonSizeNormal, ''],
                                     [lang.buttonSizeLarge, 'btn-lg']
