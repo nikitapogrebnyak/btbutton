@@ -28,36 +28,14 @@
                         this.data.btntype = "btn-primary";
                       } else if ($el.hasClass("btn-secondary")) {
                         this.data.btntype = "btn-secondary";
-                      } else if ($el.hasClass("btn-success")) {
-                        this.data.btntype = "btn-success";
-                      } else if ($el.hasClass("btn-danger")) {
-                        this.data.btntype = "btn-danger";
-                      } else if ($el.hasClass("btn-warning")) {
-                        this.data.btntype = "btn-warning";
-                      } else if ($el.hasClass("btn-info")) {
-                        this.data.btntype = "btn-info";
                       } else if ($el.hasClass("btn-light")) {
                         this.data.btntype = "btn-light";
-                      } else if ($el.hasClass("btn-dark")) {
-                        this.data.btntype = "btn-dark";
                       } else if ($el.hasClass("btn-link")) {
                         this.data.btntype = "btn-link";
+                      } else if ($el.hasClass("btn-link-underline")) {
+                        this.data.btntype = "btn-link-underline";
                       } else if ($el.hasClass("btn-outline-primary")) {
                         this.data.btntype = "btn-outline-primary";
-                      } else if ($el.hasClass("btn-outline-secondary")) {
-                        this.data.btntype = "btn-outline-secondary";
-                      } else if ($el.hasClass("btn-outline-success")) {
-                        this.data.btntype = "btn-outline-success";
-                      } else if ($el.hasClass("btn-outline-danger")) {
-                        this.data.btntype = "btn-outline-danger";
-                      } else if ($el.hasClass("btn-outline-warning")) {
-                        this.data.btntype = "btn-outline-warning";
-                      } else if ($el.hasClass("btn-outline-info")) {
-                        this.data.btntype = "btn-outline-info";
-                      } else if ($el.hasClass("btn-outline-light")) {
-                        this.data.btntype = "btn-outline-light";
-                      } else if ($el.hasClass("btn-outline-dark")) {
-                        this.data.btntype = "btn-outline-dark";
                       }
 
                       if ($el.hasClass("btn-sm")) {
@@ -108,7 +86,7 @@
                         var $el = jQuery(this.element.$);
 
                         if (this.data.btntype) {
-                            $el.removeClass('btn-primary btn-secondary btn-success btn-danger btn-warning btn-info btn-light btn-dark btn-link btn-outline-primary btn-outline-secondary btn-outline-success btn-outline-danger btn-outline-warning btn-outline-info btn-outline-light btn-outline-dark').addClass(this.data.btntype);
+                            $el.removeClass('btn-primary btn-secondary btn-light btn-link btn-link-underline btn-outline-primary').addClass(this.data.btntype);
                         }
 
                         $el.removeClass('btn-sm btn-lg');

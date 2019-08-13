@@ -23,21 +23,10 @@ CKEDITOR.dialog.add('btbutton', function (editor) {
                                 items: [
                                     [lang.buttonPrimary, 'btn-primary'],
                                     [lang.buttonSecondary, 'btn-secondary'],
-                                    [lang.buttonSuccess, 'btn-success'],
-                                    [lang.buttonDanger, 'btn-danger'],
-                                    [lang.buttonWarning, 'btn-warning'],
-                                    [lang.buttonInfo, 'btn-info'],
                                     [lang.buttonLight, 'btn-light'],
-                                    [lang.buttonDark, 'btn-dark'],
                                     [lang.buttonLink, 'btn-link'],
-                                    [lang.buttonOutlinePrimary, 'btn-outline-primary'],
-                                    [lang.buttonOutlineSecondary, 'btn-outline-secondary'],
-                                    [lang.buttonOutlineSuccess, 'btn-outline-success'],
-                                    [lang.buttonOutlineDanger, 'btn-outline-danger'],
-                                    [lang.buttonOutlineWarning, 'btn-outline-warning'],
-                                    [lang.buttonOutlineInfo, 'btn-outline-info'],
-                                    [lang.buttonOutlineLight, 'btn-outline-light'],
-                                    [lang.buttonOutlineDark, 'btn-outline-dark']
+                                    [lang.buttonLinkUnderline, 'btn-link-underline'],
+                                    [lang.buttonOutlinePrimary, 'btn-outline-primary']
                                 ],
                                 setup: function (widget) {
                                     this.setValue(widget.data.btntype || 'btn-primary');
